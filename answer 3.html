@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo copy 3.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+            <div id="logo">
+                <img src="img/Logo-ISIL.webp" alt="">
+            </div>
+            <div id="titulo">
+                <h1>Introduccion a la programacion</h1>
+            </div>
+
+        </div>
+        <div id="contenido">
+            <div id="enunciado">
+                <p>Ejercicio 01 :Diseñe un programa que permita el ingreso el nombre de un estudiante, el nombre del curso, su nota final, el número de clases del ciclo y el número de clases que no asistió. En el caso que las ausencias superen el 20% del número de clases del ciclo su nota definitiva será 0 (cero). Visualice el nombre, la asignatura, la nota y una anotación, en el caso de la nota cero la anotación será el motivo de la desaprobación.</p>
+            </div>
+            <div id="resultado">
+                <script>
+                    
+                    var horasTrabajadas = prompt("Ingrese la cantidad de horas laboradas:");
+
+                    
+                    horasTrabajadas = parseFloat(horasTrabajadas);
+
+                    
+                    var sueldoInicial, bonificacion, sueldoTotal;
+
+                    
+                    if (horasTrabajadas > 40) {
+                        sueldoInicial = horasTrabajadas * 55;         // Pago por hora S/.55
+                        bonificacion = sueldoInicial * 0.10;          // Bonificación 10%
+                    } else {
+                        sueldoInicial = horasTrabajadas * 30;         // Pago por hora S/.30
+                        bonificacion = sueldoInicial * 0.15;          // Bonificación 15%
+                    }
+
+                    sueldoTotal = sueldoInicial + bonificacion;
+
+                    
+                    document.write("Horas trabajadas: " + horasTrabajadas + "<br>");
+                    document.write("Sueldo inicial: S/. " + sueldoInicial.toFixed(2) + "<br>");
+                    document.write("Bonificación: S/. " + bonificacion.toFixed(2) + "<br>");
+                    document.write("Sueldo total a pagar: S/. " + sueldoTotal.toFixed(2));
+
+                              
+                
+
+
+                </script>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
